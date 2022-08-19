@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsla(0, 0%, 81%,0.2);
+}
+
+.continer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem;
+    gap: 1rem ;
+   
+}
+.daniel {
+    position: relative;
+    background-color: hsl(263, 55%, 52%);
+    padding: 1rem;
+    border-radius: 8px;
+ 
+    height: 80vh;
+  
+}
+.dan_opp {
+    position: relative;
+    z-index: 1;
+}
+.ppl_opinin{
+color: hsl(0, 0%, 100%);
+padding: 1.2rem ;
+font-size: 23px;
+font-weight: 600;
+text-align: left;
+padding: 1rem ;
+/* width: 100%; */
+}
+.img_wrapper {
+    display: block;
+    padding: 1rem 1rem;
+
+}
+.daniel .ppl_img, img {
+    position: relative;
+    float: left;
+    border: solid white 1px;
+    border-radius: 50%;
+    width: 7%;
+    margin: 10px;
+    bottom: 5px;
+}
+.ppl_testmoial {
+    text-align: left;
+color: hsla(0, 0%, 81%,0.5);
+/* width: 100%; */
+padding: 0 1rem 0 1rem;
+font-size: 1rem;
+font-weight: 500;
+}
+svg {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    
+    z-index:1;
+    
+}
+.daniel_name ,.ppl_name{
+    color:hsla(0, 0%, 81%,50%);
+}
+.ppl_verified {
+    color: hsla(0, 0%, 81%,0.6);
+}
+.jonathan {
+    background-color: hsl(217, 19%, 35%);
+    padding: 1rem auto;
+    border-radius: 0.5rem;
+    height: 19rem;
+}
+
+.jeantte {
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 8px;
+}
+.jeantte h3 {
+color: black;
+}
+.patrick {
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 8px;
+    height: 29.5rem;
+}
+.patrick h4 {
+    color: hsl(0, 0%, 100%);
+}
+.patrick_img {
+    border-color: hsl(263, 55%, 52%)
+}
+.kira {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    padding-bottom: 1.3rem;
+}
+.kira h3 {
+    display: inline-block;
+    color: black;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+@media  (min-width:40rem) {
+    .continer {
+        display: grid;
+        grid-template-columns: repeat(4, 300px);
+        grid-auto-rows: repeat(3,1fr);
+        padding: 10rem;
+       margin: 0 a;
+    }
+    .daniel {
+        grid-column-start:1;
+        grid-column-end: 3;
+        height: 21rem;
+    }
+ 
+    svg {
+        padding-right: 4rem;
+    }
+    .jonathan {
+        height: 23rem;
+    }
+    .kira {
+        grid-column-start: 4;
+        grid-column-end: -1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .kira_name {
+        color: black;
+    }
+    .kira_testmoinl{
+        font-size: 19px;
+
+    }
+    .patrick {
+        grid-column: span 2;
+        height: 20rem;
+    }
+    .patrick_testmoial{
+        padding: 1rem;
+    }
+    .jeantte_name {
+        color: hsla(0, 0%, 0%);
+    }
+    .jeantte_testmonil {
+        padding-top: 4.5rem;
+    }
+}
